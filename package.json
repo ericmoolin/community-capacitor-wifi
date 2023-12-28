@@ -23,7 +23,7 @@
     "build-electron": "tsc --project electron/tsconfig.json && rollup -c electron/rollup.config.js && rimraf ./electron/build",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
-    "prepublishOnly": "npm run build"
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "@capacitor/android": "^5.5.1",
